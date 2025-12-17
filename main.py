@@ -9,7 +9,7 @@ os.system('color')
 
 
 class Params:
-    def __init__(self, table_name, sheet_name, amount_of_days, raskladka_file_name, bzukk_table_name, log_file_name, cycle_amount, amount_of_people=14):
+    def __init__(self, table_name, sheet_name, amount_of_days, raskladka_file_name, bzukk_table_name, log_file_name, cycle_amount, amount_of_people=10):
         self.table_name = table_name
         self.sheet_name = sheet_name
         self.amount_of_days = amount_of_days
@@ -25,12 +25,12 @@ class Params:
                f'log_file_name: {self.log_file_name}\ncycle_amount: {self.cycle_amount}\namount_of_people: {self.amount_of_people}'
 
 # table_name = 'Архыз.xlsx'
-table_name = 'Рыбоков.xlsx'
+table_name = 'Крымские раскладка.xlsx'
 sheet_name = 'Раскладка'
 raskladka_file_name = 'raskladka.txt'
 bzukk_table_name = 'bzukk.csv'
 log_file_name = 'log.txt'
-amount_of_days = 2
+amount_of_days = 7
 cycle_amount = 1
 pars = Params(table_name, sheet_name, amount_of_days, raskladka_file_name, bzukk_table_name, log_file_name, cycle_amount)
 
